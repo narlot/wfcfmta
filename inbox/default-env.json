@@ -31,6 +31,36 @@
                     "zoneid": "166c14a4-b2a0-4086-8330-af3422a58ce1"
                 }
             }
+        ],
+        "destination": [
+            {
+                "name": "app-inbox-bpmworkflowruntime-dest-srv",
+                "instance_name": "app-inbox-bpmworkflowruntime-dest-srv",
+                "label": "destination",
+                "tags": [
+                    "destination",
+                    "conn",
+                    "connsvc",
+                    "endpoint:https://api.cf.eu10.hana.ondemand.com",
+                    "org:ecenta-de",
+                    "space:dev"
+                ],
+                "plan": "lite",
+                "credentials": {
+                    "clientid": "sb-clone7c3c563225914a038640c2a978eabdd9!b89785|destination-xsappname!b404",
+                    "clientsecret": "3b90377f-dcff-482d-a1dc-0e9a10cf8322$qLZ2_lh0l3fKvUZEDQZcZWrVw0fNYS9JPBP0Kupg0Pw=",
+                    "identityzone": "ecenta-de",
+                    "instanceid": "7c3c5632-2591-4a03-8640-c2a978eabdd9",
+                    "service_key_name": "key",
+                    "tenantid": "166c14a4-b2a0-4086-8330-af3422a58ce1",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.eu10.hana.ondemand.com",
+                    "uri": "https://destination-configuration.cfapps.eu10.hana.ondemand.com",
+                    "url": "https://ecenta-de.authentication.eu10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2rF5PFn6PbuNXt/PwCcUdYqc8Zn8pV6ySx1aCvt97K1fWE5iNCtxojsz8k1rT+pFSwT0lnZ2qXhpxaeqFdxSOB1y6ILJWsDyqDP7W1UpMZ7Y8FIBFzGtshHG/67cPRkPg1IdhKDNJVN6w6u395dQb22F2GMxYMf14/dFT2V8BaZ8cWcahb2avs9iiAP2ORL3eW45AmG3fcX/zWr9/JMse+VzEu0nZjiJDfgtW4diK1H8KqnOX32DB7guHzotddhf5+nFcQCdWFr/VJt1aKkeqbS54uWBseeuMgb1xaOEf/RYw+CCM6H5WlQWIf+w1zfXX3NPYaldx0X73sxWjhRugwIDAQAB-----END PUBLIC KEY-----",
+                    "xsappname": "clone7c3c563225914a038640c2a978eabdd9!b89785|destination-xsappname!b404"
+                }
+            }
         ]
     }
 }

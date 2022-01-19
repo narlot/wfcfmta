@@ -7,7 +7,7 @@ modules:
 - name: app-inbox-inbox-dest-content
   type: com.sap.application.content
   requires:
-  - name: app-inbox-inbox-dest-srv
+  - name: app-inbox-bpmworkflowruntime-dest-srv
     parameters:
       content-target: true
   - name: app-inbox-inbox-repo-host
@@ -85,6 +85,24 @@ resources:
       version: 1.0.0
     service: destination
     service-name: app-inbox-inbox-dest-srv
+    service-plan: lite
+- name: app-inbox-bpmworkflowruntime-dest-srv
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: OAuth2UserTokenExchange
+            Name: bpmworkflow
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://api.workflow-sap.cfapps.eu10.hana.ondemand.com/workflow-service
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: app-inbox-bpmworkflowruntime-dest-srv
     service-plan: lite
 - name: app-inbox-inbox-uaa
   type: org.cloudfoundry.managed-service

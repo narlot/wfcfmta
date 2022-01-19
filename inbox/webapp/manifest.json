@@ -17,6 +17,16 @@
           "odataVersion": "2.0",
           "localUri": "localService/metadata.xml"
         }
+      },
+      "bpmworkflowruntime": {
+        "uri": "bpmworkflowruntime/v1/tcm/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0",
+          "localUri": "localService/metadata.xml"
+        }
+
+
       }
     }
   },
