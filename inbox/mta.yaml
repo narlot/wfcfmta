@@ -7,7 +7,7 @@ modules:
 - name: app-inbox-inbox-dest-content
   type: com.sap.application.content
   requires:
-  - name: app-inbox-bpmworkflowruntime-dest-srv
+  - name: app-inbox-inbox-dest-srv
     parameters:
       content-target: true
   - name: app-inbox-inbox-repo-host

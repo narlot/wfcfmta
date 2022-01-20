@@ -11,9 +11,9 @@
     "main": "webapp/index.html",
     "dependencies": {},
     "devDependencies": {
-        "@ui5/cli": "^2.14.1",
-        "@sap/ux-ui5-tooling": "1",
-        "@sap/ui5-builder-webide-extension": "1.0.x",
+        "@ui5/cli": "^2.14.3",
+        "@sap/ux-ui5-tooling": "^1.4.4",
+        "@sap/ui5-builder-webide-extension": "^1.1.7",
         "ui5-task-zipper": "^0.3.1",
         "mbt": "^1.0.15"
     },
